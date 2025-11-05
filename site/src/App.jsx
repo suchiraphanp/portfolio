@@ -50,11 +50,13 @@ export default function App() {
           {/* Right: profile image */}
           <div className="flex-1 flex justify-center">
             <div className="w-48 h-48 md:w-60 md:h-60 rounded-full bg-gradient-to-br from-blue-200 to-blue-100 border border-blue-300 flex items-center justify-center text-blue-700 font-semibold">
-              <img
-                src="/profile_picture.jpg"
-                alt="portrait"
-                className="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover border border-blue-200 shadow"
-              />
+               <img
+                  src={`${import.meta.env.BASE_URL}profile.jpg`}  
+                  alt="Suchi Prommuangkun"
+                  className="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover border border-blue-200 shadow"
+                  loading="eager"
+                  decoding="async"
+                />
             </div>
           </div>
         </div>
